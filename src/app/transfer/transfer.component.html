@@ -1,0 +1,70 @@
+
+
+<div class="main-content">
+
+    <div class="container-fluid">
+        <div class="card">
+            <div class="card-header card-header-primary">
+
+                <h4 class="card-title">Transfer Form </h4>
+
+                <p class="card-category"></p>
+            </div>
+            <div class="card-body">
+                <form>
+                    <table class="table table-striped">
+                        <tr>
+                            <td>From Account Number </td> 
+                           <td> : </td>
+                           <td><input type="text" placeholder="accountNumber" class="border-0" [(ngModel)]="anumber" name="acnumber"> </td>
+                           <td><button type="button" class="btn-info" (click)="find()" >Find Details</button> </td>
+                           
+                        </tr>
+                       
+                        <tr>
+                            <td>Accountant Name </td>
+                            <td> : </td>
+                            <td> <input type="text" placeholder=" Accountant Name " class="border-0" [(ngModel)]="aName" name="acname"> </td>
+                        </tr>
+                        <tr>
+                            <td>Accountant ID </td>
+                            <td> : </td>
+                            <td> <input type="text" placeholder=" Accountant id " class="border-0" [(ngModel)]="aid" name="acid"> </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Account Balance </td>
+                            <td> : </td>
+                            <td> <input type="text" placeholder="Account Balance" class="border-0"  [(ngModel)]="abalance" name="acbalance"> </td>
+                        </tr>
+                      
+                        <tr>
+                            <td>To Account Number </td> 
+                           <td> : </td>
+                           <td><input type="text" placeholder="accountNumber" class="border-0" [(ngModel)]="toAccountNumber" name="toaccount"> </td>
+                           <td> </td>
+                           
+                        </tr>
+                       
+                        <tr>
+                            <td>Transfer Amount </td>
+                            <td>:</td>
+                            <td> <input type="number" placeholder="transfer amount" class="border-0" [(ngModel)]="transferAmount" name="tamount" required="true">  </td>
+                        </tr>
+
+                    </table>
+                       
+
+                    <hr/>
+                   
+                    <button  type="submit" class="btn btn-werning pull-right" (click)="transferAccount()" >Transfer Account</button>
+                    <button  type="submit" class="btn btn-danger pull-right"  >cancel</button>
+                    
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+
+</div>

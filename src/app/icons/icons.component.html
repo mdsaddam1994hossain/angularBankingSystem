@@ -1,0 +1,69 @@
+
+ <!--deposit code here -->
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="card">
+            <div class="card-header card-header-success">
+
+                <h4 class="card-title">Deposit Form</h4>
+
+                <p class="card-category"></p>
+            </div>
+            <div class="card-body">
+                <form>
+                    <table class="table table-striped" >
+                        <tr>
+                            <td>Account Number </td> 
+                           <td> : </td>
+                           <td><input type="text" placeholder="accountNumber" class="border-0" [(ngModel)]="anumber" name="acnumber"> </td>
+                           <td><button type="button" class="btn-info" (click)="find()" >Find Details</button> </td>
+                           
+                        </tr>
+                      
+                        <tr>
+                            <td>Accountant Name </td>
+                            <td> : </td>
+                            <td><input type="text" placeholder="accountant name" class="border-0"  [(ngModel)]="aName" name="acname">  </td>
+                        </tr>
+                       
+                        <tr>
+                            <td>Account ID </td>
+                            <td> : </td>
+                            <td><input type="number" placeholder="account id" class="border-0" [(ngModel)]="aid" name="acid">  </td>
+                        </tr>
+                      
+                        <tr>
+                            <td>Account Type</td>
+                            <td> : </td>
+                            <td><input type="text" placeholder="account type" class="border-0" [(ngModel)]="atype" name="actype">   </td>
+                        </tr>
+                      
+                        <tr>
+                            <td>Account Balance </td>
+                            <td> : </td>
+                            <td><input type="number" placeholder="account balance" class="border-0" [(ngModel)]="abalance" name="acbalance">  </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Deposit Amount </td>
+                            <td>:</td>
+                            <td> <input type="number" placeholder="deposit amount" class="border-0" [(ngModel)]="depositAmount" name="damount"> </td>
+                        </tr>
+
+                    </table>
+                       
+
+                    <hr/>
+                   
+                    <button mat-raised-button type="submit" class="btn btn-success pull-right" (click)="depositAccount()" >Deposit Account</button>
+                    <button mat-raised-button type="submit" class="btn btn-danger pull-right"  >cancel</button>
+                    
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+   

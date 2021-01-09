@@ -1,0 +1,35 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="card">
+            <div class="card-header card-header-info">
+                
+                   <h5 class="card-title">Total Account List
+                    <input type="text" class="float-right" placeholder="Search.." >
+                   </h5>
+                
+                <p class="card-category"></p>
+            </div>
+            <div class="card-body">
+                <table class="table table-striped">
+                    <tr>
+                        <th>Index</th>
+                        <th>Accountant Name</th>
+                        <th>Account Number</th>
+                        <th>Account Type</th>
+                        <th>Balance</th>
+                    </tr>
+                    <tr *ngFor ="let account of accounts; let i = index " [class.bg-primary]="account.id == selectedAccount" (mouseover)="updateSelectedAccount(account.id)">
+                        <td>{{(account.id)}} </td>
+                        <td>{{account.accountantName}} </td>
+                        <td>{{account.accountNumber}} </td>
+                        <td>{{account.accountType}} </td>
+                        <td>{{account.balance}} </td>
+                    </tr>
+                </table>
+
+                
+
+            </div>
+        </div>
+    </div>
+ </div>

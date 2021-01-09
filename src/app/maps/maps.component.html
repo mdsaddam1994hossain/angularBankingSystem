@@ -1,0 +1,98 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="card">
+            <div class="card-header card-header-primary">
+                <h4 class="card-title">Open A New Account</h4>
+                <p class="card-category">Please provide your valid information</p>
+            </div>
+            <div class="card-body">
+
+                <form>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <mat-form-field class="example-full-width">
+                                <input matInput placeholder="Account Number" [(ngModel)] ="account.accountNumber"  name="anumber">
+                            </mat-form-field>
+                        </div>
+                        <div class="col-md-3">
+                            <mat-form-field class="example-full-width">
+                                <input matInput placeholder="UserID" [(ngModel)] ="account.id"  name="uid">
+
+                            </mat-form-field>
+                        </div>
+                        <div class="col-md-4">
+                            <mat-form-field class="example-full-width">
+                                <input matInput placeholder="Email " type="Email">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <mat-form-field class="example-full-width">
+                                <input matInput placeholder="Fist Name" type="text" [(ngModel)] ="account.accountantName"  name="aname">
+                            </mat-form-field>
+                        </div>
+                        <div class="col-md-6">
+                            <mat-form-field class="example-full-width">
+                                <input matInput placeholder="Last Name" type="text">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <mat-form-field class="example-full-width">
+                                <input matInput placeholder="Adress" type="text">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <mat-form-field class="example-full-width">
+                                <input matInput placeholder="City" type="text">
+                            </mat-form-field>
+                        </div>
+                        <div class="col-md-4">
+                            <mat-form-field class="example-full-width">
+                                <input matInput placeholder="Country" type="text">
+                            </mat-form-field>
+                        </div>
+                        <div class="col-md-4">
+                            <mat-form-field class="example-full-width">
+                                <input matInput placeholder="Postal Code" type="text">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col-md-12 container-fluid">
+                            <mat-form-field class="example-full-width">
+                                <input type="number"  matInput placeholder="Initial Balance" [(ngModel)] ="account.balance"  name="abalance">
+                            </mat-form-field>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-2">
+                            Account Type :
+                        </div>
+                        <div class="col-sm-3">
+                            <a id="navbarDropdownMenuLink" data-toggle="dropdown" >
+                                <select name="cars" class="dropdownItem" [(ngModel)] ="account.accountType"  name="atype" >
+                                  <option value="current Account">current Account</option>
+                                  <option value="savings Account">savings Account</option>
+                                  <option value="fixed Account">fixed Account</option>
+                                </select>
+                              </a>
+                        </div> 
+                    </div>
+                    <hr>
+                   
+                    <button mat-raised-button type="submit" class="btn btn-success pull-right" (click)="saveAccount()" >create Account</button>
+                    <div class="clearfix"></div>
+                </form>
+
+
+            </div>
+        </div>
+    </div>
