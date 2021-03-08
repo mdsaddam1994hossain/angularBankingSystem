@@ -12,6 +12,7 @@
 - Restful Service
 
 ### Sample images
+## Please see master branch for images
 ## Quick start
 
 Quick start options:
