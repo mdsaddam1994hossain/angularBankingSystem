@@ -12,6 +12,33 @@
 - Restful Service
 
 ### Sample images
+
+## Dashboard
+  ![](image/homeangular.PNG)
+
+## User Profile
+  ![](image/userprofile.PNG)
+
+## New Account
+  ![](image/newaccountangular.PNG)
+
+## Account List
+  ![](image/accountlistangular.PNG)
+
+## Deposit
+  ![](image/depositangular.PNG)
+
+## Withdraw
+  ![](image/withdrawfund.PNG)
+
+## Transfer
+  ![](image/fundtransfer.PNG)
+
+## Customer List
+  ![](image/customerangular.PNG)
+
+
+
 ## Quick start
 
 Quick start options:
