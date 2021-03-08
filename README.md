@@ -1,4 +1,17 @@
+# Banking Management System
 
+```
+# Author Md Saddam Hossain
+```
+### Email : saddam30061994@gmail.com
+
+## Technology Used
+- Angular 6
+- Material Design
+- MySQL
+- Restful Service
+
+### Sample images
 ## Quick start
 
 Quick start options:
